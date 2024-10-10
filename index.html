@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Konkhmer+Sleokchher&family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Venta de productos</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <p class="logo">SHOP</p>
+      <img src="svg/Carrito.svg" alt="carrito" class="logo__img" />
+      <div class="header__descripcion">
+        <h2 class="header__title">
+          <span class="deco">Disfruta</span> de tus compras
+        </h2>
+        <button class="header-btn" type="button">
+          Comprar ahora
+          <img src="svg/Carrito.svg" alt="carrito" class="btn__img" />
+        </button>
+      </div>
+    </header>
+
+    <section class="Product">
+      <h1 class="Product__title">Productos Disponibles</h1>
+
+      <section class="Product__section">
+
+        <figure class="card__product">
+          <img src="img/banana.jpg" alt="producto" class="card__img" />
+          <div class="card__descripcion">
+            <h3 id="nombre" class="card__title">Banana</h3>
+            <p id="precio" class="price">50$</p>
+
+            <div class="categori categori-fruit">
+              <img src="svg/Fruit.svg" alt="" class="Product__img" />
+              <p class="categori-type categori__fruit">Fruta</p>
+            </div>
+          </div>
+          <button type="button" data-id="1" class="product__btn">Comprar</button>
+        </figure>
+
+        <figure class="card__product">
+          <img src="img/zanahoria.jpg" alt="producto" class="card__img" />
+          <div class="card__descripcion">
+            <h3 id="nombre" class="card__title">Zanahoria</h3>
+            <p id="precio" class="price">100$</p>
+
+            <div class="categori categori-vegetal">
+              <img src="svg/verdure.svg" alt="" class="Product__img" />
+              <p class="categori-type categori__vegetal">Vegetal</p>
+            </div>
+          </div>
+          <button type="button" data-id="2" class="product__btn">Comprar</button>
+        </figure>
+
+        <figure class="card__product">
+          <img src="img/avena.jpg" alt="producto" class="card__img" />
+          <div class="card__descripcion">
+            <h3 id="nombre" class="card__title">Avena</h3>
+            <p id="precio" class="price">150$</p>
+
+            <div class="categori categori-wheat">
+              <img src="svg/wheat.svg" alt="" class="Product__img" />
+              <p class="categori-type categori__wheat">Trigo</p>
+            </div>
+          </div>
+          <button type="button" data-id="3" class="product__btn">Comprar</button>
+        </figure>
+
+        <figure class="card__product">
+          <img src="img/gaseosa.jpg" alt="producto" class="card__img" />
+          <div class="card__descripcion">
+            <h3 id="nombre" class="card__title">Gaseosa</h3>
+            <p id="precio" class="price">200$</p>
+
+            <div class="categori categori-soda">
+              <img src="svg/soda.svg" alt="" class="Product__img gaseosa__img"/>
+              <p class="categori-type categori__soda">Soda</p>
+            </div>
+          </div>
+          <button type="button" data-id="4" class="product__btn">Comprar</button>
+        </figure>
+
+        <figure class="card__product">
+          <img src="img/cerveza.jpg" alt="producto" class="card__img" />
+          <div class="card__descripcion">
+            <h3 id="nombre" class="card__title">Cerveza</h3>
+            <p id="precio" class="price">250$</p>
+
+            <div class="categori categori-beer">
+              <img src="svg/beer.svg" alt="" class="Product__img" />
+              <p class="categori-type categori__beer">Cerveza</p>
+            </div>
+          </div>
+          <button type="button" data-id="5" class="product__btn">Comprar</button>
+        </figure>
+      </section>
+    </section>
+  </body>
+  <script src="js/productos.js"></script>
+  <script src="js/main.js"></script>
+</html>
