@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Venta de productos</title>
   </head>
-
   <body>
+
     <header class="main-header">
       <p class="logo">SHOP</p>
-      <img src="svg/Carrito.svg" alt="carrito" class="logo__img" />
       <div class="header__descripcion">
         <h2 class="header__title">
           <span class="deco">Disfruta</span> de tus compras
@@ -30,11 +29,12 @@
 
     <section class="Product">
       <h1 class="Product__title">Productos Disponibles</h1>
+      <img src="svg/Carrito-black.svg" alt="carrito" id="verCarrito" class="logo__img" />
 
       <section class="Product__section">
 
         <figure class="card__product">
-          <img src="img/banana.jpg" alt="producto" class="card__img" />
+          <img src="img/banana.jpg" alt="producto" id="" class="card__img" />
           <div class="card__descripcion">
             <h3 id="nombre" class="card__title">Banana</h3>
             <p id="precio" class="price">50$</p>
@@ -104,6 +104,9 @@
         </figure>
       </section>
     </section>
+
+    <div class="modal-container" id="modal-container"></div>
+
   </body>
   <script src="js/productos.js"></script>
   <script src="js/main.js"></script>

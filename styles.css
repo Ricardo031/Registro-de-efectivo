@@ -28,14 +28,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.logo__img {
-    width: 36px;
-    height: 36px;
-    position: absolute;
-    right: 70px;
-    top: 12px;
-    cursor: pointer;
-}
+
 
 .header__descripcion {
     display: flex;
@@ -62,7 +55,7 @@
 
 .header-btn {
     display: flex;
-    width: 206px;
+    width: 208px;
     font-family: "Konkhmer Sleokchher";
     background: #62AA40;
     padding: 4px 12px;
@@ -75,7 +68,7 @@
     font-weight: 300;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     outline: none;
-    border: 1px solid #000;
+    border: 0.2px solid #000;
     transition: background .3s ease;
 
 }
@@ -96,6 +89,18 @@
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__img {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 60px;
+    bottom: -65px;
+    cursor: pointer;
+    color: #000;
 }
 
 .Product__title {
@@ -186,20 +191,83 @@
 .product__btn {
     display: flex;
     background: #62AA40;
+    color: white;
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    color: white;
     font-family: "Konkhmer Sleokchher";
     border: none;
     font-size: 1rem;
-    /* Ajustar para mantenerlo relativo */
-    padding: 5px;
+    padding: 2px;
     max-width: 100%;
+    border-radius: 0 0 1px 1px;
     transition: background .3s ease;
 }
 
 .product__btn:hover {
     cursor: pointer;
     background: #477c2f;
+}
+
+/*todo: modal */
+.modal-container {
+    display: flex;
+    position: fixed;
+    overflow: auto;
+    font-family: "Konkhmer Sleokchher";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px; 
+    background-color: white;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    padding: 20px;
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1000; 
+}
+
+.modal-container.active {
+    transform: translateX(0); 
+}
+
+.modal-header {
+    display: flex;
+    font-family: "Konkhmer Sleokchher";
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.modal-header-button {
+    font-family: monospace;
+    cursor: pointer;
+    color: rgb(184, 76, 64);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.modal-img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.modal-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.total-content {
+    color: #62AA40;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
 }
