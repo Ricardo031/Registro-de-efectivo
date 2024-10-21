@@ -29,4 +29,10 @@ const productos = [
         precio: 250,
         img: "img/cerveza.jpg",
     },
+    {
+        id:6,
+        nombre: "Leche",
+        precio: 300,
+        img: "img/leche.jpg"
+    }
 ]

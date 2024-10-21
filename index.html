@@ -3,12 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Konkhmer+Sleokchher&family=Koulen&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
     <title>Venta de productos</title>
   </head>
@@ -102,10 +97,26 @@
           </div>
           <button type="button" data-id="5" class="product__btn">Comprar</button>
         </figure>
+
+        <figure class="card__product">
+          <img src="img/leche.jpg" alt="producto" class="card__img" />
+          <div class="card__descripcion">
+            <h3 id="nombre" class="card__title">Leche</h3>
+            <p id="precio" class="price">300$</p>
+
+            <div class="categori categori-beer">
+              <img src="svg/leche.svg" alt="" class="Product__img" />
+              <p class="categori-type categori__beer">lacteo</p>
+            </div>
+          </div>
+          <button type="button" data-id="5" class="product__btn">Comprar</button>
+        </figure>
       </section>
     </section>
 
     <div class="modal-container" id="modal-container"></div>
+
+    <div class="modal-check">Añadido a Carrito</div>
 
   </body>
   <script src="js/productos.js"></script>

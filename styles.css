@@ -1,273 +1,327 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Konkhmer;
+    src: url(tipografy/KonkhmerSleokchher-Regular.ttf);
+}
+
+@font-face {
+    font-family: Koulen;
+    src: url(tipografy/Koulen-Regular.ttf);
+}
+
+@font-face {
+    font-family: Akshar;
+    src: url(tipografy/Akshar-VariableFont_wght.ttf);
 }
 
 .main-header {
-    display: flex;
-    height: 600px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.37) 100%), url(img/Canasta\ de\ frutas.jpg) lightgray 50% / cover no-repeat;
-    background-size: cover;
+	display: flex;
+	height: 550px;
+    color: white;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.37) 100%), url("img/Canasta de frutas.jpg") lightgray 50% / cover no-repeat;
 }
 
 .logo {
-    position: absolute;
-    left: 23px;
-    top: 7px;
-    text-align: center;
-    font-family: Koulen;
-    font-size: 32px;
-    font-weight: 400;
-    background: linear-gradient(270deg, #62AA40 0%, #DEB441 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	position: absolute;
+	left: 23px;
+	top: 7px;
+	text-align: center;
+	font-family: Koulen;
+	font-size: 32px;
+	font-weight: 400;
+	background: linear-gradient(270deg, #62AA40 0%, #DEB441 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-
-
 .header__descripcion {
-    display: flex;
-    flex-direction: column;
-    width: 490px;
-    margin-left: 15px;
-    gap: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 490px;
+	margin-left: 15px;
+	gap: 20px;
 }
 
 .header__title {
-    color: #FFF;
-    font-family: "Konkhmer Sleokchher";
-    font-size: 96px;
-    font-weight: 400;
-    line-height: 100px;
+	color: #FFF;
+	font-family: "Konkhmer";
+	font-size: 96px;
+	font-weight: 400;
+	line-height: 100px;
 }
 
 .deco {
-    background: linear-gradient(180deg, #9cff67 0%, #f0fd77 92%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background: linear-gradient(180deg, #9cff67 0%, #f0fd77 92%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .header-btn {
-    display: flex;
-    width: 208px;
-    font-family: "Konkhmer Sleokchher";
-    background: #62AA40;
-    padding: 4px 12px;
-    margin-top: 5px;
-    align-items: center;
-    gap: 4px;
-    border-radius: 8px;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 300;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    outline: none;
-    border: 0.2px solid #000;
-    transition: background .3s ease;
-
+	display: flex;
+	width: 208px;
+	font-family: "Konkhmer";
+	background: #39960d;
+	padding: 4px 12px;
+	margin-top: 5px;
+    color: white;
+	align-items: center;
+	gap: 4px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: 300;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	border: 0.2px solid #000;
+	transition: background .3s ease;
 }
 
 .header-btn:hover {
-    cursor: pointer;
-    background: #477c2f;
+	cursor: pointer;
+	background: #23550c;
 }
 
 .btn__img {
-    width: 28px;
-    height: 28px;
+	width: 28px;
+	height: 28px;
 }
 
-/*todo: Seccion de productos */
-
+/*todo: Seccion productos  */
 .Product {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    position: relative;
 }
 
 .logo__img {
-    width: 36px;
-    height: 36px;
-    position: absolute;
-    right: 60px;
-    bottom: -65px;
-    cursor: pointer;
-    color: #000;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	right: 40px;
+	top: 12px;
+	cursor: pointer;
+	color: #000;
 }
 
 .Product__title {
-    font-size: 36px;
-    font-family: "Konkhmer Sleokchher";
-    text-align: center;
+	font-size: 36px;
+	font-family: "Konkhmer";
+	text-align: center;
 }
 
 .Product__section {
-    display: flex;
-    padding: 20px 30px;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    row-gap: 50px;
+    width: 100%;
+	display: flex;
+    margin: 10px;
+	align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+	row-gap: 40px;
+    column-gap: 40px;
 }
 
 .card__product {
-    display: flex;
-    width: 325px;
-    margin-left: 50px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    border-radius: 4px;
-    border: 2px solid #9C9C9C;
-    background: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+	display: flex;
+	width: 300px;
+	flex-direction: column;
+	border-radius: 4px;
+	border: 2px solid #9C9C9C;
+	background: #FFF;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card__img {
-    display: flex;
-    height: 270px;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
+	height: 250px;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-.gaseosa__img {
-    background-position: bottom;
-}
-
 .card__descripcion {
-    width: 100%;
-    max-height: 100px;
-    display: flex;
-    padding: 0px 8px;
-    border-top: 1px solid #9C9C9C;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+	display: flex;
+	padding: 0px 8px;
+	border-top: 1px solid #9C9C9C;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+    position: relative;
 }
 
 .card__title {
-    color: #000;
-    font-family: "Konkhmer Sleokchher";
-    font-size: 32px;
+	color: #000;
+	font-family: "Konkhmer";
+	font-size: 30px;
 }
 
 .price {
-    color: #DEB441;
-    text-align: center;
-    font-family: Koulen;
-    font-size: 28px;
+	color: #976f00;
+	text-align: center;
+	font-family: Koulen;
+	font-size: 28px;
 }
 
 .categori {
-    display: flex;
-    font-family: Akshar;
-    font-weight: 500;
-    align-items: center;
-    gap: 1px;
-    position: relative;
-    left: 238px;
-    bottom: 95px;
+	display: flex;
+	font-family: Akshar;
+	font-weight: 500;
+	align-items: center;
+	gap: 1px;
+	position: absolute; /*Recordar que solo se puede utilizar el absolute cuando su contenedor padres es diferente a position static. tiene que cambiarse*/
+	right: 10px;
+	top: 10px;
 }
 
 .categori-vegetal {
-    left: 228px;
+	right: 15px;
 }
 
 .categori-beer {
-    left: 225px;
+	right: 15px;
 }
 
 .product__btn {
-    display: flex;
-    background: #62AA40;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    font-family: "Konkhmer Sleokchher";
-    border: none;
-    font-size: 1rem;
-    padding: 2px;
-    max-width: 100%;
-    border-radius: 0 0 1px 1px;
-    transition: background .3s ease;
+	display: flex;
+	background: #62AA40;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+	font-family: "Konkhmer";
+	border: none;
+	font-size: 1rem;
+	padding: 2px;
+	max-width: 100%;
+	border-radius: 0 0 1px 1px;
+	transition: background .3s ease;
 }
 
 .product__btn:hover {
-    cursor: pointer;
-    background: #477c2f;
+	cursor: pointer;
+	background: #477c2f;
 }
 
-/*todo: modal */
+/* todo: Modal */
 .modal-container {
-    display: flex;
-    position: fixed;
-    overflow: auto;
-    font-family: "Konkhmer Sleokchher";
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 300px; 
-    background-color: white;
-    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
-    flex-direction: column;
-    padding: 20px;
-    transform: translateX(100%); 
-    transition: transform 0.3s ease-in-out; 
-    z-index: 1000; 
+	display: flex;
+	position: fixed;
+	overflow: auto;
+	font-family: "Konkhmer";
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 300px;
+	background-color: white;
+	box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+	flex-direction: column;
+	padding: 20px;
+	transform: translatex(100%);
+	transition: transform 0.3s ease-in-out;
+	z-index: 1000;
 }
 
 .modal-container.active {
-    transform: translateX(0); 
+	transform: translatex(0);
 }
 
 .modal-header {
-    display: flex;
-    font-family: "Konkhmer Sleokchher";
-    font-size: 12px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 22px;
+	display: flex;
+	font-family: "Konkhmer";
+	font-size: 12px;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 22px;
 }
 
 .modal-header-button {
-    font-family: monospace;
-    cursor: pointer;
-    color: rgb(184, 76, 64);
+	font-family: monospace;
+	cursor: pointer;
+	color: #e81801;
 }
 
 .modal-content {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #000;
 }
 
 .modal-img {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
 }
 
 .modal-footer {
-    margin-top: auto;
-    text-align: center;
+	margin-top: auto;
+	text-align: center;
 }
 
 .total-content {
-    color: #62AA40;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
+	color: #62AA40;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+@media (max-width:425px) {
+
+    .main-header {
+        display: flex;
+        height: 350px;
+        color: white;
+    }
+
+    .header__descripcion {
+        width: min-content;
+        gap: 10px;
+    }
+
+    .header__title {
+        color: #FFF;
+        font-family: "Konkhmer";
+        font-size: 52px;
+        font-weight: 400;
+        line-height: 50px;
+    }
+
+    .header-btn {
+        display: flex;
+        justify-content: space-evenly;
+        width: 175px;
+        padding: 2px 5px;
+        font-size: 15px;
+        outline: none;
+    }
+
+    .Product__title {
+        font-size: 26px;
+    }
+    
+    .logo__img {
+        width: 36px;
+        height: 36px;
+        position: relative;
+        left: 0;
+        margin-bottom: 15px;
+    }
+
+    .card__img {
+        height: 230px;
+    }
+    
+    .modal-container {
+        width: 250px;
+    }
 }
